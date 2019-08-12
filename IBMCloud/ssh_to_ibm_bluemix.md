@@ -47,7 +47,7 @@ $ ibmcloud cf ssh-code
 $ ssh -p <port>  cf:<username>/0@<domain>
 ```
 
-##### It requires password, get it from step 6.
+##### It requires password, get it from step 7.
 
 ##### After entering password you will be inside server, where you can see all your apps.
 
