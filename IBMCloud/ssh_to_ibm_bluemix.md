@@ -25,8 +25,9 @@ $ ibmcloud cf app <appname> --guid
 ```sh
 $ ibmcloud cf curl /v2/info
 ```
-###### Above command will return a JSON, copy the value of `app_ssh_endpoint` property.
-###### `app_ssh_endpoint`  will look similar to  `ssh.us-south.cf.cloud.ibm.com:2222`, here `2222` is the port number and `ssh.us-south.cf.cloud.ibm.com` is your domain
+##### Above command will return a JSON, copy the value of `app_ssh_endpoint` property.
+##### `app_ssh_endpoint`  will look similar to  `ssh.us-south.cf.cloud.ibm.com:2222`
+##### Here `2222` is the port number and `ssh.us-south.cf.cloud.ibm.com` is your domain
 
 ##### 6) Last step is to get the password
 ```sh
@@ -39,11 +40,11 @@ $ ibmcloud cf ssh-code
 $ ssh -p <port>  cf:<username>/0@<domain>
 ```
 
-###### It requires password, get it from step 6.
+##### It requires password, get it from step 6.
 
-###### After entering password you will be inside server, where you can see all your apps.
+##### After entering password you will be inside server, where you can see all your apps.
 
-##### if your are faceing any error, please refer to IBMCloud [Docs] or raise an issue in the `Issues` section.
+##### If your are faceing any error, please refer to IBMCloud [Docs] or raise an issue in the `Issues` section.
 
 [Docs]: <https://docs.cloudfoundry.org/devguide/deploy-apps/ssh-apps.html>
 
