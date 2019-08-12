@@ -9,19 +9,26 @@
 ```sh
 $ ibmcloud login
 ```
-##### 3) After login, target your workspace
+
+##### 3) Target the server region
+```sh
+$ ibmcloud regions
+$ ibmcloud target -r <region-name>
+```
+
+##### 4) After login, target your workspace
 ```sh
 $ ibmcloud target -cf
 ```
 #### First of getting things ready required for `ssh` to Bluemix
 
-##### 4) Get your username
+##### 5) Get your username
 ```sh
 $ ibmcloud cf app <appname> --guid
 ```
 ###### This username will look similar to this -> `302271ff-eb97-49cf-b5d5-6f130023ecc2`
 
-##### 5) Get your domain
+##### 6) Get your domain
 ```sh
 $ ibmcloud cf curl /v2/info
 ```
@@ -29,12 +36,12 @@ $ ibmcloud cf curl /v2/info
 ##### `app_ssh_endpoint`  will look similar to  `ssh.us-south.cf.cloud.ibm.com:2222`
 ##### Here `2222` is the port number and `ssh.us-south.cf.cloud.ibm.com` is your domain
 
-##### 6) Last step is to get the password
+##### 7) Last step is to get the password
 ```sh
 $ ibmcloud cf ssh-code
 ```
 
-#### 7) `ssh` to your Bluemix server
+#### 8) `ssh` to your Bluemix server
 
 ```sh
 $ ssh -p <port>  cf:<username>/0@<domain>
