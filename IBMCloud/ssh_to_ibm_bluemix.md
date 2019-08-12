@@ -23,6 +23,12 @@ $ ibmcloud target -cf
 #### First of getting things ready required for `ssh` to Bluemix
 
 ##### 5) Get your username
+
+###### To get username, you will require your appname. List your app name by this command.
+```sh
+$ ibmcloud cf apps
+```
+###### Select the appname and the command below
 ```sh
 $ ibmcloud cf app <appname> --guid
 ```
